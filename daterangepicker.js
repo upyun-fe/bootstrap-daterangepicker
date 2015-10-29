@@ -1468,8 +1468,9 @@
         },
 
         hidekeydown: function(e) {
-            //hide on tab or enter
+            // hide on input enter
             if (e.keyCode === 13) {
+                $(e.target).trigger('change')
                 this.hide();
             }
         },
